@@ -14,18 +14,18 @@
     // read user input
     const text = prompt('enter some text');
 
-    const confirmation = confirm(`did you mean to type this?\n  ${_}`);
+    const confirmation = confirm(`did you mean to type this?\n  ${text}`);
 
     // program logic
     let response;
-    if (_) {
-      _ = 'well done :)';
+    if (confirmation === true) {
+       response = 'well done :)';
     } else {
-      _ = 'practice typing :(';
+      response = 'practice typing :(';
     }
 
     // respond to user
-    alert(_);
+    alert(response);
 
     // log for dev
     console.log('-- interaction log --');
