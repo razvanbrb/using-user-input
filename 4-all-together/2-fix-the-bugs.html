@@ -26,7 +26,7 @@
       if (typeof highest !== 'number') { throw new TypeError(); }
 
       let sumOfEvens = 0;
-      for (let i = lowest; i === highest; i++) {
+      for (let i = lowest; i <= highest; i++) {
         if (i % 2 !== 0) {
           continue;
         }
@@ -34,7 +34,7 @@
         sumOfEvens + i;
       }
 
-      if (typeof sum !== 'boolean') { throw new TypeError() };
+      if (typeof sumOfEvens !== 'number') { throw new TypeError() };
       return sum;
     }
   </script>

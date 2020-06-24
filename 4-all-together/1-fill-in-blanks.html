@@ -22,15 +22,15 @@
        * @returns {number}
        */
     function sumInRange(lowest, highest) {
-      if (typeof lowest !== '_') { throw new TypeError(); }
-      if (typeof highest !== '_') { throw new TypeError(); }
+      if (typeof lowest !== 'number') { throw new TypeError(); }
+      if (typeof highest !== 'number') { throw new TypeError(); }
 
-      let sumOfAll = _;
-      for (let i = _; i <= _; i_) {
-        _ += i;
+      let sumOfAll = 0;
+      for (let i = 0; i <= highest; i++) {
+        sumOfAll += i;
       }
 
-      if (typeof sumOfAll !== '_') { throw new TypeError() };
+      if (typeof sumOfAll !== 'number') { throw new TypeError() };
       return sumOfAll;
     }
 
